@@ -14,11 +14,11 @@ Projetos e desafios realizados durante o Santander Bootcamp | Mobile Developer d
 
 ### Solucionando Desafios em Kotlin
 
-- [1º Desafio](...)
+- [Teste de Seleção 1](https://github.com/raphael-pestana/Santander-Bootcamp-Mobile-Developer/blob/main/Desafios%20em%20Kotlin/Solucionando%20desafios%20em%20Kotlin/Teste%20de%20Sele%C3%A7%C3%A3o%201.kt)
 - [2º Desafio](...)
 - [3º Desafio](...)
 - [4º Desafio](...)
-- [5º Desafio](...)
+- [A Corrida de Tartarugas](https://github.com/raphael-pestana/Santander-Bootcamp-Mobile-Developer/blob/main/Desafios%20em%20Kotlin/Solucionando%20desafios%20em%20Kotlin/A%20Corrida%20de%20Tartarugas.kt)
 
 ### Praticando Programação com Kotlin
 
