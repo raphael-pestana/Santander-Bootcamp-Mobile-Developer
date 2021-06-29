@@ -9,8 +9,8 @@ Projetos e desafios realizados durante o Santander Bootcamp | Mobile Developer d
 ### Primeiros Passos em Kotlin
 
 - [Soma Simples](https://github.com/raphael-pestana/Santander-Bootcamp-Mobile-Developer/blob/main/Desafios%20em%20Kotlin/Primeiros%20passos%20em%20Kotlin/Soma%20Simples.kt)
-- [2º Desafio](...)
-- [3º Desafio](...)
+- [Média 1](https://github.com/raphael-pestana/Santander-Bootcamp-Mobile-Developer/blob/main/Desafios%20em%20Kotlin/Primeiros%20passos%20em%20Kotlin/M%C3%A9dia%201.kt)
+- [Multiplicação Simples](https://github.com/raphael-pestana/Santander-Bootcamp-Mobile-Developer/blob/main/Desafios%20em%20Kotlin/Primeiros%20passos%20em%20Kotlin/Multiplica%C3%A7%C3%A3o%20Simples.kt)
 
 ### Solucionando Desafios em Kotlin
 
