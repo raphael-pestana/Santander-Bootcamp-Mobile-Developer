@@ -1,4 +1,4 @@
-![](...)
+![](https://github.com/raphael-pestana/Santander-Bootcamp-Mobile-Developer/blob/main/Santander-Bootcamp-Mobile-Developer-IMG.png)
 
 # Santander Bootcamp | Mobile Developer
 
@@ -8,7 +8,7 @@ Projetos e desafios realizados durante o Santander Bootcamp | Mobile Developer d
 
 ### Primeiros Passos em Kotlin
 
-- [Soma Simples](https://github.com/raphael-pestana/Bootcamp-Everis-Kotlin-Developer/blob/main/Desafios%20em%20Kotlin/Introdu%C3%A7%C3%A3o%20a%20Programa%C3%A7%C3%A3o%20em%20Kotlin/Soma%20Simples.kt)
+- [Soma Simples](https://github.com/raphael-pestana/Santander-Bootcamp-Mobile-Developer/blob/main/Desafios%20em%20Kotlin/Primeiros%20passos%20em%20Kotlin/Soma%20Simples.kt)
 - [2º Desafio](...)
 - [3º Desafio](...)
 
