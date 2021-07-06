@@ -22,13 +22,12 @@ fun main(args: Array<String>) {
     var sum : Int
     var t1 = 0
     var t2 = 1
-    print("$t1 ")
-    print("$t2")
 
-    for (i in 1..(n-2)) {
+    for (i in 1..(n-1)) {
         sum = t1 + t2
-        print(" $sum")
+        print("$t1 ")
         t1 = t2
         t2 = sum
     }
+    print("$t1")
 }
