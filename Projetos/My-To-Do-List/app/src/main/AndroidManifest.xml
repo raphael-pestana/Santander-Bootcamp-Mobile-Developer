@@ -17,9 +17,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".ui.AddTaksActivity">
-
-        </activity>
+        <activity android:name=".ui.AddTaksActivity" />
 
     </application>
 

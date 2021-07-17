@@ -1,7 +1,6 @@
 package com.pestana.mytodolist.ui
 
 import android.os.Bundle
-import android.util.Log
 import androidx.appcompat.app.AppCompatActivity
 import com.google.android.material.datepicker.MaterialDatePicker
 import com.google.android.material.timepicker.MaterialTimePicker
@@ -59,7 +58,7 @@ class AddTaksActivity : AppCompatActivity() {
                     hour = binding.tilHour.text,
             )
             TaskDataSource.insertTask(task)
-            Log.e("TAG", "insertListerner: " + TaskDataSource.getList())
+            finish()
         }
     }
 }
