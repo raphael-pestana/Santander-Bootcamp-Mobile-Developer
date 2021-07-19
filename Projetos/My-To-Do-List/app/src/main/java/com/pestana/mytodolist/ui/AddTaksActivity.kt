@@ -1,5 +1,6 @@
 package com.pestana.mytodolist.ui
 
+import android.app.Activity
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import com.google.android.material.datepicker.MaterialDatePicker
@@ -11,7 +12,7 @@ import com.pestana.mytodolist.extensions.format
 import com.pestana.mytodolist.extensions.text
 import com.pestana.mytodolist.model.Task
 import java.util.*
-import javax.security.auth.login.LoginException
+
 
 class AddTaksActivity : AppCompatActivity() {
 
@@ -58,6 +59,8 @@ class AddTaksActivity : AppCompatActivity() {
                     hour = binding.tilHour.text,
             )
             TaskDataSource.insertTask(task)
+
+            setResult(Activity.RESULT_OK)
             finish()
         }
     }
