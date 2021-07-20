@@ -31,7 +31,7 @@ class TaskListAdapter : ListAdapter<Task, TaskListAdapter.TaskViewHolder>(DiffCa
         fun bind(item: Task) {
             binding.tvTitle.text = item.title
             binding.tvDate.text = "${item.date} - ${item.hour}"
-            //possivelmente colocar a descrição
+            binding.tvDescription.text = item.description
             binding.ivMore.setOnClickListener {
                 showPopup(item)
             }

@@ -23,6 +23,17 @@ class AddTaksActivity : AppCompatActivity() {
         binding = ActivityAddTaskBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
+        if (intent.hasExtra(TASK_ID)){
+            val taskId = intent.getIntExtra(TASK_ID, 0)
+            TaskDataSource.findById(taskId)?.let {
+                binding.tilTitle.text = it.title
+                binding.tilDescription.text = it.description
+                binding.tilDate.text = it.date
+                binding.tilHour.text = it.hour
+
+            }
+        }
+
         insertListerner ()
     }
 
@@ -57,11 +68,16 @@ class AddTaksActivity : AppCompatActivity() {
                     description = binding.tilDescription.text,
                     date = binding.tilDate.text,
                     hour = binding.tilHour.text,
+                    id = intent.getIntExtra(TASK_ID, 0)
             )
             TaskDataSource.insertTask(task)
 
             setResult(Activity.RESULT_OK)
             finish()
         }
+    }
+
+    companion object {
+        const val TASK_ID = "task_id"
     }
 }

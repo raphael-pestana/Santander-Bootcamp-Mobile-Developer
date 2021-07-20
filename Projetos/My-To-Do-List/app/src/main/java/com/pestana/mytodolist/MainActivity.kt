@@ -1,5 +1,6 @@
 package com.pestana.mytodolist
 
+import android.app.Activity
 import android.content.Intent
 import android.content.res.Configuration
 import androidx.appcompat.app.AppCompatActivity
@@ -19,6 +20,9 @@ class MainActivity : AppCompatActivity() {
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
+        binding.rvTasks.adapter = adapter
+        updateList()
+
        insertListeners()
     }
 
@@ -28,21 +32,25 @@ class MainActivity : AppCompatActivity() {
         }
 
         adapter.listenerEdit = {
-
+            val intent = Intent(this, AddTaksActivity::class.java)
+            intent.putExtra(AddTaksActivity.TASK_ID, it.id)
+            startActivityForResult(intent, CREATE_NEW_TASK )
         }
 
         adapter.listenerDelete = {
-
+            TaskDataSource.deleteTask(it)
+            updateList()
         }
 
     }
 
     override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
         super.onActivityResult(requestCode, resultCode, data)
-        if (requestCode == CREATE_NEW_TASK) {
-            binding.rvTasks.adapter = adapter
-            adapter.submitList(TaskDataSource.getList())
-        }
+        if (requestCode == CREATE_NEW_TASK && resultCode == Activity.RESULT_OK) updateList()
+    }
+
+    private fun updateList() {
+        adapter.submitList(TaskDataSource.getList())
     }
 
     companion object {

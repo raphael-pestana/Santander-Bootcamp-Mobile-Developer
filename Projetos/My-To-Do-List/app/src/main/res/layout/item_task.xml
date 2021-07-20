@@ -18,14 +18,24 @@
         tools:text="Passear com o Cachorro" />
 
     <TextView
-        android:id="@+id/tv_date"
+        android:id="@+id/tv_description"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textColor="@color/black"
         android:textSize="18sp"
         app:layout_constraintStart_toStartOf="@id/tv_title"
         app:layout_constraintTop_toBottomOf="@id/tv_title"
-        tools:text="17/07/2021 18:00" />
+        tools:text="Dar uma volta no parque." />
+
+    <TextView
+        android:id="@+id/tv_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="@id/tv_description"
+        app:layout_constraintTop_toBottomOf="@id/tv_description"
+        tools:text="17/07/2021 - 18:00" />
 
     <androidx.appcompat.widget.AppCompatImageView
         android:id="@+id/iv_more"
