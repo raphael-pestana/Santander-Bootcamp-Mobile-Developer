@@ -12,8 +12,8 @@ import com.pestana.mytodolist.model.Task
 
 class TaskListAdapter : ListAdapter<Task, TaskListAdapter.TaskViewHolder>(DiffCallback()) {
 
-    var listenerEdit : (Task) -> Unit = {}
-    var listenerDelete : (Task) -> Unit = {}
+    var listenerEdit: (Task) -> Unit = {}
+    var listenerDelete: (Task) -> Unit = {}
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): TaskViewHolder {
         val inflater = LayoutInflater.from(parent.context)
@@ -25,8 +25,9 @@ class TaskListAdapter : ListAdapter<Task, TaskListAdapter.TaskViewHolder>(DiffCa
         holder.bind(getItem(position))
     }
 
-    inner class TaskViewHolder (private val binding: ItemTaskBinding
-    ): RecyclerView.ViewHolder(binding.root) {
+    inner class TaskViewHolder(
+        private val binding: ItemTaskBinding
+    ) : RecyclerView.ViewHolder(binding.root) {
 
         fun bind(item: Task) {
             binding.tvTitle.text = item.title
@@ -55,7 +56,7 @@ class TaskListAdapter : ListAdapter<Task, TaskListAdapter.TaskViewHolder>(DiffCa
 
 }
 
-class DiffCallback : DiffUtil.ItemCallback<Task>(){
+class DiffCallback : DiffUtil.ItemCallback<Task>() {
     override fun areItemsTheSame(oldItem: Task, newItem: Task) = oldItem == newItem
     override fun areContentsTheSame(oldItem: Task, newItem: Task) = oldItem.id == newItem.id
 }

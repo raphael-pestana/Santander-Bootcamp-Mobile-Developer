@@ -5,6 +5,7 @@ import android.content.Intent
 import android.content.res.Configuration
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.view.View
 import com.pestana.mytodolist.databinding.ActivityMainBinding
 import com.pestana.mytodolist.datasource.TaskDataSource
 import com.pestana.mytodolist.ui.AddTaksActivity
@@ -50,8 +51,14 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun updateList() {
-        adapter.submitList(TaskDataSource.getList())
+        val list = TaskDataSource.getList()
+        binding.includeEmptyState.emptyState.visibility = if(list.isEmpty()) View.VISIBLE
+        else View.GONE
+
+        adapter.submitList(list)
+
     }
+
 
     companion object {
         private const val CREATE_NEW_TASK = 1000
