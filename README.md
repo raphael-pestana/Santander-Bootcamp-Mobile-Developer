@@ -28,9 +28,9 @@ Projetos e desafios realizados durante o Santander Bootcamp | Mobile Developer d
 
 ## **:iphone: Projetos**
 
-| :heavy_check_mark:[**My To Do List** (Em Construção)](https://github.com/raphael-pestana/Santander-Bootcamp-Mobile-Developer/tree/main/Projetos/My-To-Do-List) | :heavy_check_mark:[**2º Projeto** (Nome do Projeto)](...) |
-| ------------------------------------------------------------ | --------------------------------------------------------- |
-| ![](....gif)                                                 | ![](....gif)                                              |
+| :heavy_check_mark:[**My To Do List** (Em Construção)](https://github.com/raphael-pestana/Santander-Bootcamp-Mobile-Developer/tree/main/Projetos/My-To-Do-List) |
+| ------------------------------------------------------------ |
+| ![](https://github.com/raphael-pestana/Santander-Bootcamp-Mobile-Developer/blob/main/Projetos/My-To-Do-List.gif) |
 
 
 
